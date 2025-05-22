@@ -1,0 +1,14 @@
+google_api_python_client
+langchain
+langchain_community
+langchain-google-community[drive]
+langchain_google_firestore
+langchain_google_genai
+langchain_text_splitters
+protobuf
+python-dotenv
+tenacity
+google-auth-httplib2
+google-auth-oauthlib
+PyPDF2
+streamlit
