@@ -22,7 +22,7 @@ Deployed on the cloud with Docker, Cloud run, Cloud Build, and Firestore to open
 
 [![Demo](https://github.com/arjunsam94/ASKYPBOT_GCP/blob/e5b55ab8536e1ca40f3d8478302e7bcf486494a2/ASKYPdemo.png)](https://youtu.be/2wU9EjaIsPo)
 
-## Trade offs
+## Thought process
 
 - Chose to run the models locally using Ollama with Gemma3, Nomic text embed, and ChromaDB over using APIs during the POC stage. This enabled testing without worrying about exceeding the free API limits even though the output was slower.
 - Chose to build the solution instead of getting access to Gemini features within the Google workspace since it required an upgrade to the paid plan that doesn’t offer non-profit discount.
