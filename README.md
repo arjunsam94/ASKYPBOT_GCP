@@ -11,7 +11,7 @@ No additional budget for new tools, cloud services, or multiple engineering reso
 ## Proof of Concept
 Built a POC on the local machine to get buy-in from the non-profit board members.
 
-![POC]()
+![POC](https://github.com/arjunsam94/ASKYPBOT_GCP/blob/ac37707815bf3b3ac3eaaa3c0ed746c54b223fbb/POC_updated.png)
 
 ## Cloud solution
 Deployed on the cloud with Docker, Cloud run, Cloud Build, and Firestore to open the availability for the rest of the team.
