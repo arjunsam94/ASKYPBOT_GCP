@@ -2,7 +2,7 @@
 
 ## Problem
 ### Time 
-The YPCommunities team produces over 30 market research documents identifying new community engagement and partnership opportunities. This forced the members to sift through multiple documents to get helpful insights and develop strategies.
+The YPCommunities team produces over 30 market research documents every 3-6 months, identifying new community engagement and partnership opportunities. This forced the members to sift through multiple documents to get helpful insights and develop strategies.
 ### Cost
 The seat-based pricing model makes it prohibitively expensive for a non-profit to use Gemini with Google workspaces since they rely on adding new volunteers and regional managers to help with projects on an ongoing basis.
 
