@@ -20,14 +20,18 @@ Deployed on the cloud with Docker, Cloud run, Cloud Build, and Firestore to open
 
 ## Demo
 
-![[Demo]()](https://youtu.be/2wU9EjaIsPo)
+[![Demo](https://github.com/arjunsam94/ASKYPBOT_GCP/blob/e5b55ab8536e1ca40f3d8478302e7bcf486494a2/ASKYPdemo.png)](https://youtu.be/2wU9EjaIsPo)
 
-## Features
+## Trade offs
 
-- Feature one — brief description
-- Feature two — brief description
-- Feature three — brief description
+- Chose to run the models locally using Ollama with Gemma3, Nomic text embed, and ChromaDB over using APIs during the POC stage. This enabled testing without worrying about exceeding the free API limits even though the output was slower.
+- Chose to build the solution instead of getting access to Gemini features within the Google workspace since it required an upgrade to the paid plan that doesn’t offer non-profit discount.
+- Decided to use Gemini Flash 1.5 and text embedding API over using Ollama on Runpod, since the reports were compiled with mostly publicly available information and added complexity for more security was not necessary.
+- Decided not to go with multimodal embedding models even though we had both text and images in our documents since the generated insights were primarily based on text data, as observed during testing.
+- Split data ingestion and response generation into separate Docker containers instead of combining within one to parallelize tasks for improved speed and to avoid application failure when no new files are available for ingestion.
 
-## Demo
+## Impact
 
-![Description](screenshot.png)
+- Reduced the time taken to compile insights about sourcing partners and engagement strategies from hours to a few minutes.
+- Saved over $1000 in total subscription cost without requiring additional engineering resources.
+- Reduced data latency by 4 seconds per request (over 65%) by building and deploying separate Docker containers to handle data ingestion and response generation tasks in parallel.
